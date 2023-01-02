@@ -17,7 +17,7 @@ contract TodoList {
     }
 
     function create_task(string memory _content) public {
-        task_count += 1;
+        task_count ++;
         tasks[task_count] = Task(task_count, _content, false);
     }
 }
